@@ -1,0 +1,20 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "My first Rest API",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "author": "ba-13",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.9"
+  }
+}

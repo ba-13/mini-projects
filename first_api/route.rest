@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/60e3e84c7159ad43bced8a86
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "ba-13",
+    "registeredToChannel": "TraverseryMedia"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/60e3e84c7159ad43bced8a86
+
+###
+
+PATCH http://localhost:3000/subscribers/60e3eb7385d25d49b66d5fea
+Content-Type: application/json
+
+{
+    "name": "yeet7"
+}
