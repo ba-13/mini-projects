@@ -1,0 +1,27 @@
+GET http://localhost:3000/getTodos
+
+###
+
+PUT http://localhost:3000/6113cf4da46da6f79ce13bbc HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "Be with Yeet"
+}
+
+###
+
+POST http://localhost:3000/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "todo": "Don't waste Time!"
+}
+
+###
+
+DELETE http://localhost:3000/611434628408d42d376803b7
+
+###
+
+GET http://localhost:3000/getTodo/6113fb145d074387fa6f82ec

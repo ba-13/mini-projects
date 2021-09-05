@@ -1,0 +1,35 @@
+<!-- The only thing ejs does is to render these params and send this file as a normal html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started with EJS</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- If statement -->
+      <h1>You searched for: <%= data.userQuery %></h1>
+      <% if(data.loggedIn) { %>
+      <h2>You are logged in as : <%= data.username %></h2>
+      <% } %>
+
+      <div class="list">
+        <ul>
+          <!-- Normal Rendering -->
+          <!-- <li><%= searchResults[0] %></li>
+          <li><%= searchResults[1] %></li>
+          <li><%= searchResults[2] %></li>
+          <li><%= searchResults[3] %></li>
+          <li><%= searchResults[4] %></li> -->
+
+          <!-- Looping in Ejs -->
+          <% searchResults.forEach(result=>{ %>
+          <li><%= result %></li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
