@@ -1,0 +1,2 @@
+Post-processing is subjective. Normally we do this in Astrophotography.
+We always shoot as RAW Images. Work with TIFF files, cause it's uncompressed.
