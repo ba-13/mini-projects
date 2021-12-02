@@ -13,3 +13,9 @@ Using SQLite3 was a breeze and what I always wanted, a file to save a DB, and no
 Use [DB Browser](sqlitebrowser.org) for a more solid view of DB as a GUI, it's quite intuitive.
 
 Use Postman's collection feature to make a well, collection of requests to check for routes of your API.
+
+```bash
+pip freeze > requirements.txt
+```
+
+Use this to save all dependencies if the venv is active.

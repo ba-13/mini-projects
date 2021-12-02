@@ -13,8 +13,8 @@ screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load('./assets/background.png')
 
 # Sound
-mixer.music.load("./assets/background.wav")
-mixer.music.play(-1)
+# mixer.music.load("./assets/background.wav")
+# mixer.music.play(-1)
 
 # Caption and Icon
 pygame.display.set_caption("Space Invader")
