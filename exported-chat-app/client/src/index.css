@@ -1,0 +1,122 @@
+:root {
+    --margin-boundary: 35ch;
+    --white: #f3f3f3;
+    --bg-black: rgba(0, 0, 0, 0.813);
+    --meta-white: rgba(255, 255, 255, 0.521);
+    --me-chatbox-color: rgba(3, 129, 43, 0.598);
+    --other-chatbox-color: rgb(98, 95, 95);
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid var(--white);
+    border-radius: 50%;
+    border-top: 16px solid var(--me-chatbox-color);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+select {
+    position: fixed;
+    padding: 0.5rem;
+    font-size: 18px;
+    color: var(--bg-black);
+    width: fit-content;
+    background-color: var(--white);
+    border: none;
+    border-radius: 2%;
+}
+
+#switch-btn {
+    border-radius: 30%;
+    position: fixed;
+    padding: 2rem;
+    right: 5%;
+    bottom: 5%;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+#switch-btn:hover {
+    color: white;
+    background-color: var(--me-chatbox-color);
+}
+
+body {
+    background-color: var(--bg-black);
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox {
+    width: fit-content;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    color: white;
+    max-width: 40%;
+    min-width: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    white-space: pre-wrap;
+}
+
+.meta {
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 10px;
+    color: var(--meta-white);
+}
+
+#me {
+    margin-left: auto; 
+    margin-right: var(--margin-boundary);
+    background-color: var(--me-chatbox-color);
+}
+
+#me > .chat {
+    padding-right: 4em;
+}
+
+
+#other {
+    margin-right: auto;
+    margin-left: var(--margin-boundary);
+    background-color: var(--other-chatbox-color);
+}
+
+#other > .chat {
+    padding-right: 4em;
+}
+
+#other > .name {
+    padding-right: 3em;
+    margin-bottom: 3px;
+}
