@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FlashBaron
+Comment=Flash cards from Baron 333
+Keywords=memory;flashcards;vocabulary;
+Exec=flash_baron
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=flash-card.png
+Categories=Custom;Memory;
