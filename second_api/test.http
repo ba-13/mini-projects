@@ -1,0 +1,21 @@
+GET http://localhost:3000/person
+
+###
+
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/person/John
+
+###
+
+GET http://localhost:3000/person?name=Jonathan
+
+###
+
+GET http://localhost:3000/nowhere
+
+###
+
+GET http://localhost:3000/error
