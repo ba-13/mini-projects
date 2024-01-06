@@ -1,0 +1,2 @@
+#define chitchat_VERSION_MAJOR @chitchat_VERSION_MAJOR@
+#define chitchat_VERSION_MINOR @chitchat_VERSION_MINOR@
