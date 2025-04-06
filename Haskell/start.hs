@@ -35,4 +35,3 @@ moreFavNums = 69:favNums
 
 revFavNums = reverse moreFavNums
 isListEmpty = null moreFavNums
-secondPrim
