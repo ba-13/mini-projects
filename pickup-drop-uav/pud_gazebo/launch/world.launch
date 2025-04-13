@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="world_name" default="shastra_world" />
+    <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find pud_description)/models" />
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find pud_gazebo)/worlds/$(arg world_name).world" />
+        <arg name="paused" value="true" />
+    </include>
+
+</launch>

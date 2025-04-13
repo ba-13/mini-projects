@@ -1,0 +1,15 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/attached/AerialRobotics-IITK/workspaces/pickup_drop_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/attached/AerialRobotics-IITK/workspaces/pickup_drop_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "files.associations": {
+        "*.rmd": "markdown",
+        "string": "cpp",
+        "memory": "cpp"
+    }
+}
